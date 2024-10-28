@@ -1,0 +1,173 @@
+/* Header styles */
+header {
+    background-color: #30353f;
+    padding: 35px;
+    box-shadow: 0 0 3px #000;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex; /* Add this */
+    align-items: center; /* Add this */
+    justify-content: space-between; /* Add this */
+}
+
+.logo {
+   float: left;
+}
+
+/* Styles for the nav element */
+nav {
+    display: flex;
+    align-items: center; /* Add this */
+
+}
+
+.Nav_Links_Centre {
+    display: flex; /* Change from inline to flex */
+    justify-content: center;
+    align-items: center; /* Add this */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1; /* Add this to take up available space */
+    margin-left: 150px;
+}
+
+.Nav_Links_Centre li {
+    display: inline-flex;
+    align-items: center; /* Add this */
+    padding-left: 20px;
+}
+
+.Nav_Links_Side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Add this */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Nav_Links_Side li {
+    display: inline-flex;
+    align-items: center; /* Add this */
+    padding-left: 10px;
+}
+
+/* Styles for anchor links within header list items */
+header li a {
+    color: #f1f1f1; /* Light color for text */
+    text-decoration: none; /* Removes underline from links */
+    padding: 12px; /* Space inside the link */
+    background-color: #203948; /* Dark background for links */
+    border-radius: 5px; /* Rounds the corners of the links */
+    transition: .3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effects for links in the header */
+header li a:hover {
+    color: rgb(0, 392, 392); /* Change text color on hover (check for correctness) */
+    background-color: #254253; /* Darker background on hover */
+}
+
+/* Body styles */
+body {
+    font-family: 'Archivo', sans-serif; /* Sets font family */
+    text-align: center; /* Centers text */
+    line-height: 1.5; /* Increases line spacing for readability */
+}
+
+/* Universal styles for all elements */
+* {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Includes padding and border in element's total width/height */
+}
+
+/* Container styles for layout */
+.container {
+    max-width: 1170px; /* Sets maximum width of the container */
+    background-color: #212427; /* Background color for the container */
+    margin: auto; /* Centers the container horizontally */
+}
+
+/* Row styles for flexbox layout */
+.row {
+    display: flex; /* Enables flexbox layout */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+}
+
+/* Styles for unordered lists */
+ul {
+    list-style: none; /* Removes default bullet points */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #212427; /* Dark background for the footer */
+    padding: 70px 0; /* Space above and below the footer content */
+}
+
+/* Styles for footer columns */
+.footer-col {
+    width: 25%; /* Sets width of each footer column */
+    padding: 0 15px; /* Space on the left and right of each column */
+}
+
+/* Header styles for footer column titles */
+.footer-col h4 {
+    font-size: 18px; /* Font size for the title */
+    color: #ffffff; /* White color for the title */
+    text-transform: capitalize; /* Capitalizes the first letter of each word */
+    margin-bottom: 30px; /* Space below the title */
+    font-weight: 500; /* Medium font weight */
+    position: relative; /* Allows positioning of pseudo-elements */
+}
+
+/* Pseudo-element for decorative line below footer column titles */
+.footer-col h4::before {
+    content: ""; /* Creates an empty content for the pseudo-element */
+    position: absolute; /* Positions the line absolutely within the header */
+    left: 0; /* Aligns to the left */
+    bottom: -10px; /* Positions it 10px below the title */
+    background-color: #5baed4; /* Color of the decorative line */
+    height: 2px; /* Height of the line */
+    width: 50px; /* Width of the line */
+}
+
+/* Margin for footer list items, except the last one */
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px; /* Space below each list item */
+}
+
+/* Styles for anchor links in footer lists */
+.footer-col ul li a {
+    font-size: 16px; /* Font size for links */
+    text-transform: capitalize; /* Capitalizes the first letter of each word */
+    color: #bbbbbb; /* Gray color for links */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: 300; /* Light font weight */
+    display: block; /* Makes the link a block element */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.footer-col ul li a:hover{
+    color: #5baed4;
+    padding-left: 5px;
+}
+.footer-col .social-links a{
+    display: : inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgha(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 35px;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #292c31;
+    background-color: #5baed4;
+    border-radius: 35px;
+ }
