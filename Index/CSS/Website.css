@@ -1,0 +1,42 @@
+body{
+font-family: 'Archivo', sans-serif;
+text-align: center;
+}
+header{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 5px;
+  background-color: 212427
+}
+header li
+{
+	display: inline-flex;
+  justify-content: flex-end;
+	padding-left: 35px;
+  padding-top: 20px;
+  padding-bottom: 5px
+}
+
+header li a
+{
+	color: #171a85;
+	text-decoration: none;
+	padding: 13px;
+	background-color: #203948;
+	border-radius: 5px;
+}
+
+header li a
+{
+	color: #f1f1f1;
+	text-decoration: none;
+	padding: 13px;
+	transition: .3s ease;
+}
+<style>
+  .move-right {
+    float: right;
+  }
+</style>
+
+<button class="move-right">My Button</button>
